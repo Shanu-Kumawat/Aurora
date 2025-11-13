@@ -5,6 +5,7 @@ import '../services/navigation_service.dart';
 import '../services/hardware_service.dart';
 import '../services/location_service.dart';
 import '../services/connectivity_service.dart';
+import '../widgets/raspberry_pi_alert_widget.dart';
 import 'navigation_screen.dart';
 
 /// Main screen with minimal, high-contrast UI
@@ -142,6 +143,14 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
 
               const SizedBox(height: 40),
+
+              // Raspberry Pi Alert Widget
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 16),
+                child: RaspberryPiAlertWidget(),
+              ),
+
+              const SizedBox(height: 20),
 
               // Navigation State
               Container(
